@@ -1,0 +1,51 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.login-container{
+    background-color: white;
+    height: 320px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.heading{
+    font-size: 20px;
+    color: rgb(31, 99, 194);
+}
+.reg-redirect{
+    text-decoration: underline;
+    color: rgb(3, 69, 161);
+}
+.reg-redirect:hover{
+    cursor: pointer;
+}
+.inner-container{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 200;
+    border: none;
+    margin-top: 10px;
+}
+.login-btn{
+    width: 100px;
+    padding: 10px;
+    margin-left: 25%;
+    border-radius: 10px;
+    background-color: rgb(203, 221, 251);
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
