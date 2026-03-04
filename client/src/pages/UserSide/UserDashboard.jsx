@@ -1,13 +1,19 @@
-import formIcon from "../assets/icons8-form-40.png";
-import calander from "../assets/icons8-calendar-32.png";
-import user from "../assets/icons8-user-30.png";
-import mail from "../assets/icons8-mail-24.png";
-import authIcon from "../assets/icons8-authentication-50.png";
-import graduate from "../assets/icons8-graduate-40.png";
-import "../styles/UserDashboard.css";
+import formIcon from "../../assets/icons8-form-40.png";
+import calander from "../../assets/icons8-calendar-32.png";
+import user from "../../assets/icons8-user-30.png";
+import mail from "../../assets/icons8-mail-24.png";
+import authIcon from "../../assets/icons8-authentication-50.png";
+import graduate from "../../assets/icons8-graduate-40.png";
+import "../../styles/UserSide/UserDashboard.css";
+import { useNavigate } from "react-router-dom";
+import { Navigation } from "../../Navigation";
 
 export function UserDashboard(){
+    const navigate = useNavigate();
+
     return(
+        <div>
+        <Navigation />
         <div className="body">
             <div className="welcome">
                 <span className="welcome-span"> Welcome "USER"</span>
@@ -47,16 +53,17 @@ export function UserDashboard(){
                         <div className="container">
                             <img src={graduate}/>
                             <p className="description">Browse and Apply your dream courses</p>
-                            <button className="btn">View Courses</button>
+                            <button className="btn" onClick={() => navigate("/courses")}>View Courses</button>
                         </div>
                         <div className="container">
                             <img src={formIcon}/>
                             <p className="description">Check the status of your applications.</p>
-                            <button className="btn">View Application</button>
+                            <button className="btn" onClick={() => navigate("/track")}>View Application</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

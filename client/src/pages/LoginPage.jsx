@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "../styles/LoginPage.css";
+import { Navigation } from "../Navigation";
 
 export function LoginPage(){
     const navigate = useNavigate();
@@ -7,6 +8,8 @@ export function LoginPage(){
         navigate("/dashboard");
     }
     return(
+        <div>
+        <Navigation />
         <div className="body"> 
             <div className="login-container">
                 <center className="heading">LOGIN</center>
@@ -20,6 +23,7 @@ export function LoginPage(){
                     <button className="login-btn" onClick={handleSubmit}>LogIn</button>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

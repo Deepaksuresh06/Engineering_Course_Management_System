@@ -1,0 +1,75 @@
+.track-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.track-header{
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 1000px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.track-header h2{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.track-header p{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+.track-header span{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+.application-table {
+  width: 70%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.application-table th,
+.application-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.application-table tr:last-child td {
+  border-bottom: none;
+}
+
+.application-table th {
+  font-weight: 600;
+  background-color: #f7f9fc;
+}
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status.approved {
+  background-color: #d4f8e8;
+  color: #1b7f5c;
+}
+
+.status.pending {
+  background-color: #fff4d6;
+  color: #b58105;
+}
+
+.status.rejected {
+  background-color: #ffe0e0;
+  color: #b42318;
+}

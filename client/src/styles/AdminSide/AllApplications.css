@@ -1,0 +1,90 @@
+.all-applications-body {
+  margin: 0;
+  background-color: rgb(203, 221, 251);
+}
+
+.dashboard-container {
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.application-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.application-table th {
+  background-color: rgb(203, 221, 251);
+  padding: 12px;
+  text-align: left;
+}
+
+.application-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.application-table tr:hover {
+  background-color: #f7f9fc;
+}
+.status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.approved {
+  background: #d4f4dd;
+  color: #1b5128;
+}
+.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.approve-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1c5f2c;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.approve-btn:hover {
+  background-color: #1e9d2f;
+}
+.reject-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #77262e;
+  color: white;
+  cursor: pointer;
+}
+.reject-btn:hover {
+  background-color: #f02338;
+}

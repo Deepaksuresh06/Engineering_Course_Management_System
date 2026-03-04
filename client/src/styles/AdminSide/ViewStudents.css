@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background-color: rgb(203, 221, 251);
+}
+
+.dashboard-container {
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #555;
+  margin: 0;
+}
+
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th {
+  background-color: rgb(203, 221, 251);
+  padding: 12px;
+  text-align: left;
+}
+
+.student-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.student-table tr:hover {
+  background-color: #f7f9fc;
+}
+
+.view-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6c81af;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.view-btn:hover {
+  background-color: #4c5f97;
+}
+
+.delete-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e25664;
+  color: white;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background-color: #d53850;
+}
